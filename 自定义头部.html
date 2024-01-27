@@ -1,0 +1,111 @@
+<!-- 全局设置-隐藏文件说明
+匹配被正则表达式（javascript）隐藏的文件。不明白的不要乱填。错误的正则表达式会导致前端页面崩溃。每行一个。默认情况下，有一个示例表达式将忽略大小写的 README.md 从所有目录中隐藏。
+并不是真的在隐藏。它仍然存在于 api 返回的列表中，只是没有出现在前端列表中。因此，如果您想真正隐藏，请添加元信息。
+-->
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+
+<link rel="stylesheet" type="text/css" href="https://fonts.loli.net/css?family=Source+Code+Pro">
+<link rel="stylesheet" type="text/css" href="https://fonts.loli.net/css?family=Noto+Serif+SC">
+<style type="text/css">
+    div{font-family: 'Source Code Pro','Noto Serif SC';}
+    span{font-family: 'Source Code Pro','Noto Serif SC';}
+    a{font-family: 'Source Code Pro'，'Noto Serif SC';}
+</style>
+
+<style>
+/* 文字超长自动换行效果不佳
+.name-box .name {
+	white-space: unset !important;
+	overflow: unset !important;
+} */
+/* 文件列表的不透明度，根据需要调整 */
+.obj-box.hope-stack { opacity: 0.8; }
+.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css{background-color: rgba(255, 255, 255, 0.5) !important;} /* 亮色背景 */
+.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css{background-color:rgb(0 0 0 / 50%) !important;} /* 暗色背景 */
+
+/*图标和按钮*/   
+.hope-icon {
+    color: #ffb6c1 !important /*设置所有图标颜色*/
+}
+
+.hope-button {
+    color: #fff !important; /*设置按钮字体为白色*/
+    background-color: #ffb6c1 !important /*设置按钮背景为粉色*/
+}
+
+.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-c-PJLV.hope-c-PJLV-iikaotv-css {
+	background-color: #202425 !important
+}
+
+.hope-c-PJLV.hope-c-PJLV-ikSuVsl-css{background-color: rgba(255, 255, 255, 0.5)!important;} /* 元信息README改透明后(亮色背景)(请放自定义头部) */
+.hope-c-PJLV.hope-c-PJLV-iiuDLME-css{background-color:rgb(0 0 0 / 50%)!important;} /* 元信息README改透明后(暗色背景)(请放自定义头部) */
+
+.hope-c-PJLV-ijzCLcW-css,
+.hope-c-mHASU-kFfbLQ-colorScheme-info,
+.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-c-PJLV.hope-c-PJLV-iikaotv-css svg{
+    color: #ffb6c1 !important
+}
+.hope-c-mHASU-kFfbLQ-colorScheme-info[data-focus] {
+    border-color: #ffb6c1 !important;
+    box-shadow: 0 0 0 2px #ffcdd4 !important
+}
+.hope-ui-light .hope-c-mHASU-kFfbLQ-colorScheme-info svg {
+    color: white !important
+}
+.hope-ui-dark .hope-c-mHASU-kFfbLQ-colorScheme-info svg {
+    color: #202425 !important
+}
+
+.left-toolbar-box svg:hover,
+.center-toolbar svg:hover {
+	color:  white !important;
+	background-color: #ffb6c1
+}
+
+.hope-c-PJLV-icHSmvX-css {
+    border-radius: 5px
+}
+
+/*标题栏*/
+.hope-ui-light .hope-breadcrumb__list {
+	border-radius: 10px !important /*标题栏圆角*/
+}
+
+/*右上搜索改透明(毛玻璃)(请放自定义头部)*/
+.hope-ui-light .hope-c-PJLV-ikEIIxw-css{background:rgba(255,255,255,0.2)!important;backdrop-filter:blur(10px)!important;}
+.hope-ui-dark .hope-c-PJLV-ikEIIxw-css{background: rgb(0 0 0 / 10%)!important;backdrop-filter:blur(10px)!important;}
+
+/*公告板*/
+.hope-notification__list.hope-c-UdTFD.hope-c-UdTFD-jEXiZO-placement-top-end.hope-c-PJLV.hope-c-PJLV-ijhzIfm-css {
+	max-width: fit-content
+}
+
+/*目录框*/
+.hope-ui-light .hope-breadcrumb__list,
+.hope-ui-light .obj-box,
+.hope-ui-light .hope-c-PJLV-ikSuVsl-css,
+.hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+	background-color: rgba(255, 255, 255, .8) !important /*标题栏、目录框和工具栏背景色和透明度(亮)*/
+}
+
+/*底部*/
+
+/* 隐藏页面底部的由 AList 驱动和管理 */
+.footer .hope-stack { display: none; }
+
+.footer_link:hover { color: pink }
+#footer {
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 1px
+}
+
+/*顶部固定显示*/
+.header.hope-center { position: sticky;
+    top: 0;
+    backdrop-filter: blur(9px);
+    background: #111111cc;
+    z-index: 999; }
+body.hope-ui-light .header.hope-center {  background: #fcfcfcaa; }
+</style>

@@ -1,0 +1,31 @@
+
+<!--延迟加载-->
+<!--如果要写自定义内容建议都加到这个延迟加载的范围内-->
+<div id="customize" style="display: none;">
+    <div>
+	
+    </div>
+
+<!--延迟加载范围到这里结束-->
+</div>
+<!--延迟加载配套使用JS-->
+<script>
+    let interval = setInterval(() => {
+        if (document.querySelector(".footer")) {
+            document.querySelector("#customize").style.display = "";
+            clearInterval(interval);
+        }
+    }, 50);
+</script>
+
+
+<!-- 增加底部文字 -->
+<div style="text-align: center ; ">
+<p align="center">
+&copy; Powered by <a target="_blank" href="https://alist.nn.ci/zh/" class="footer_link" >Alist</a>
+<span>|</span>
+<a target="_blank" href="https://github.com/Hi-Windom" class="footer_link">Hi-Windom</a>
+<span>|</span>
+<a target="_blank" href="/@manage" class="footer_link">绛亽</a>
+</p>
+</div>
